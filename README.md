@@ -17,8 +17,8 @@ has_many :gruops, through: :groups_users
 |------|----|-------|
 |img|string|
 |body|text|
-|groups_id|integer|
-|user_id|integer|
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 
 ### Association
 belongs_to :user
@@ -37,8 +37,8 @@ has_many :users, through: :groups_users
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user|integer|null: false, foreign_key: true|
-|group|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 belongs_to :group
