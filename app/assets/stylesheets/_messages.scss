@@ -14,18 +14,25 @@
     height: 100vh;
     width: 300px;
     
-    .top-items{
-
-      .top-items__name{
-
-      }
-    }
     .side-bar__group-list{
       position: absolute;
       background-color: #253141;
       height: 100px;
       width: 300px;
+  
+      .top-items{
+        height: 100px;
+        width: 300px;
+        position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        color: white;
 
+        .top-items__name{
+
+        }
+      }
     } 
   }
 
@@ -39,7 +46,7 @@
     .chat-main__message{
       position: absolute;
       background-color: #fafafa;
-      height: calc(100vh - 90px);
+      height: calc(100vh - 100px);
       width: calc(100vw - 300px);
       overflow: scroll;
       bottom: 0px;
