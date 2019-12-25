@@ -9,11 +9,11 @@
 
 
   .side-bar__user{
-    position: relative;
-    background-color: #253141;
+    float: left;
+    background-color: #2f3e51;
     height: 100vh;
     width: 300px;
-
+    
     .top-items{
 
       .top-items__name{
@@ -22,10 +22,10 @@
     }
     .side-bar__group-list{
       position: absolute;
-      background-color: #2f3e51;
-      height: calc(100vh - 100px);
+      background-color: #253141;
+      height: 100px;
       width: 300px;
-      bottom: 0px;
+
     } 
   }
 
@@ -39,14 +39,13 @@
     .chat-main__message{
       position: absolute;
       background-color: #fafafa;
-      height: calc(100vh - 100px);
+      height: calc(100vh - 90px);
       width: calc(100vw - 300px);
+      overflow: scroll;
       bottom: 0px;
-      
-    
 
       .chat-main__message-form{
-        position: absolute;
+        position: fixed;
         background-color: #d2d2d2;
         height: 90px;
         width: calc(100vw - 300px);
