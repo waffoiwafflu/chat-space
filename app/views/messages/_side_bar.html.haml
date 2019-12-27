@@ -1,8 +1,14 @@
-.side-bar__user
-  
-  .top-items
-      
-    .top-items__name
-       
-  .side-bar__group-list
+.side
+  .side__header
+    .side__header__box
+      %p.side__header__box__username
+        masa
+      %ul.side__header__box__menu
+        %li.side__header__box__new-group
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.side__header__box__name-edit
+          = link_to "#" do
+            = icon('fas', 'cog')
+        
     
