@@ -1,0 +1,24 @@
+.chat
+  .chat__name
+    teck camp
+    %li.chat__edit
+      = link_to "#" , class: "c" do
+        Edit    
+  .chat__member
+    Member : masa
+  .chat__message
+    .chat__message__name
+      username
+      .chat__message__name__daytime
+        2019/12/30(Mon) 12:49:04
+    .chat__message__content
+      good morning
+    .chat__message__form
+      .chat__message__form__content
+        %input{type: "text", class: "contents", placeholder: "  type a message"}
+        .chat__message__form__img
+          %label{class: "img"}
+            = icon('fas', 'image')
+            %input{type: "file", class: "hidden"}
+      .chat__message__form__bottan
+        Send 
