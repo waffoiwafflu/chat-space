@@ -50,25 +50,27 @@
         }
       }
     } 
-  
-    .group{
-      height: calc(100vh - 100px);
-      background-color: #2f3e51;
-      padding: 0 20px;
+    
+    .groups{
+      .group{
+        height: calc(100vh - 100px);
+        background-color: #2f3e51;
+        padding: 0 20px;
 
-      &__name{
-        font-size: 15px;
-        color: white;
-        padding-top: 20px;
-        padding-bottom: 5px;
-      }
-      &__chat{
-        font-size: 11px;
-        color: white;
-        padding-bottom: 40px;
+        &__name{
+          font-size: 15px;
+          color: white;
+          padding-top: 20px;
+          padding-bottom: 5px;
+        }
+        
+        &__chat{
+          font-size: 11px;
+          color: white;
+          padding-bottom: 40px;
+        }
       }
     }
-  }
 
   .chat{
     background-color: #ffffff;
@@ -188,4 +190,5 @@
       }
     }
   }
+}
 }
