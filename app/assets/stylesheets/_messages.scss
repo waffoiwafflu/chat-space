@@ -52,22 +52,29 @@
     } 
     
     .groups{
-      .group{
+      text-decoration: none;
+      
+      .group{  
         height: calc(100vh - 100px);
         background-color: #2f3e51;
         padding: 0 20px;
-
-        &__name{
-          font-size: 15px;
-          color: white;
-          padding-top: 20px;
-          padding-bottom: 5px;
-        }
         
-        &__chat{
-          font-size: 11px;
-          color: white;
-          padding-bottom: 40px;
+        .none{
+          text-decoration: none;
+
+          .group__name{
+            font-size: 15px;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 5px;
+          }
+        
+          .group__chat{
+            text-decoration: none;
+            font-size: 11px;
+            color: white;
+            padding-bottom: 40px;
+          }
         }
       }
     }
