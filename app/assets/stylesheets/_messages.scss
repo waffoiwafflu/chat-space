@@ -52,8 +52,7 @@
     } 
     
     .groups{
-      text-decoration: none;
-      
+
       .group{  
         height: calc(100vh - 100px);
         background-color: #2f3e51;
@@ -70,7 +69,6 @@
           }
         
           .group__chat{
-            text-decoration: none;
             font-size: 11px;
             color: white;
             padding-bottom: 40px;
@@ -78,7 +76,8 @@
         }
       }
     }
-
+  }
+    
   .chat{
     background-color: #ffffff;
     height: 100vh;
@@ -128,7 +127,7 @@
         padding: 46px 0px 12px 40px;
         font-size: 16px;
         font-weight: bold;
-
+ 
         &__daytime{
           float: left;
           padding-left: 10px;
@@ -142,7 +141,7 @@
         color: #434A54;
         font-size: 14px;
         padding: 0 40px;
-        }  
+      }  
 
       &__form{
         position: fixed;
@@ -150,7 +149,7 @@
         height: 90px;
         width: calc(100vw - 300px);
         bottom: 0px;
-        
+
         &__content{
           position: absolute;
           background-color: white;
@@ -171,7 +170,7 @@
             top: 10px;
             right: 10px;
             font-size: 22px;
-          
+        
             .hidden {
               display: none;
             }
@@ -197,5 +196,4 @@
       }
     }
   }
-}
 }
