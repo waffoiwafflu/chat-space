@@ -1,8 +1,8 @@
 .side
   .side__header
     .side__header__box
-      .side__header__box__username
-        masa
+      %h3.side__header__box__username
+        = current_user.name
       %ul.side__header__box__username__menu
         %li.side__header__box__username__menu__new-group
           = link_to new_group_path , class: "a" do
@@ -17,6 +17,6 @@
           .group__name
             = group.name
           .group__chat
-            まだメッセージは、ありません。
+            = group.show_last_message
 
   
