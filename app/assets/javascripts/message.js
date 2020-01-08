@@ -58,7 +58,6 @@ $(function(){
       $('.chat__message').append(html)
       $('.chat__message').animate({scrollTop: $('.chat__message')[0].scrollHeight});
       $('.form__submit').prop('disabled', false); 
-      $('.hidden').val('');
       $('form')[0].reset();
     })
     .fail(function() {
