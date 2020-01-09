@@ -62,9 +62,9 @@ $(function(){
         var insertHTML = '';
         
         $.each(messages, function(i, message) {
-          insertHTML += buildHTML(message)
+          insertHTML += buildHTML(message) 
         });
-  
+        
         $('.chat__message').append(insertHTML);
         $('.chat__message').animate({scrollTop: $('.chat__message')[0].scrollHeight});
         $("#new_message")[0].reset();
